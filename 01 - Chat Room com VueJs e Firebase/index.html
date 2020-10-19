@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat com VueJs e Firebase</title>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+  <script src="https://unpkg.com/native-toast@1.2.1/dist/native-toast.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/native-toast@1.2.1/dist/native-toast.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="chat">
+  <div class="header">
+    <h1>mago.chat</h1>
+    <img src="https://devicon.dev/devicon.git/icons/vuejs/vuejs-original.svg" alt="">
+    <img src="https://www.gstatic.com/devrel-devsite/prod/v7cbba9dce83f2a54b727914bb06dd524b80e611a7d1fe33e121163235013f003/firebase/images/touchicon-180.png" alt="">
+  </div>
+  
+  
+  <div class="messages">
+    <div v-for="message in messages" class="single-message">
+  
+      <h6 class="card-subtitle mb-2 text-muted">{{ message.nickname }}</h6>
+
+      <p v-if="message !== editingMessage" class="card-text">{{ message.text }}</p>
+      <textarea v-else v-model="messageText"></textarea>
+
+      <div v-if="message !== editingMessage" class="button-container">
+        <a @click.prevent="editMessage(message)" href="#" class="card-link">Editar</a>
+        <a @click.prevent="deleteMessage(message)" href="#" class="card-link">Apagar</a>
+      </div>
+      <div v-else class="button-container">
+        <a @click.prevent="cancelEditing" href="#" class="card-link">Cancelar</a>
+        <a @click.prevent="updateMessage" href="#" class="card-link">Confirmar</a>
+      </div>
+    </div>
+  </div>
+  <form v-if="!editingMessage" @submit.prevent="storeMessage">
+    <div class="inputs">
+      <div class="form-group">
+        <label>Mensagem:</label>
+        <textarea v-model="messageText" class="form-control"></textarea>
+      </div>
+      <div class="form-group">
+        <label>Apelido:</label>
+        <input v-model="nickname" class="form-control"/>
+      </div>
+    </div>
+    <button class="btn btn-primary">Enviar</button>
+  </form>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
