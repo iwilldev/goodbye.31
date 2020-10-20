@@ -1,4 +1,4 @@
-<img src="https://lh5.googleusercontent.com/5g7ReYeuYTE4aTh93ucx0NsS6260hLusIfqamm52Dh9pHP-9d6lQjw6TPX3dqMo2FHdYvV4Td-XU_CCNq5-e=w1600-h786" width="100%" />
+<img src="https://drive.google.com/uc?export=view&id=1He43OeabAk4bjXrjgrRzbQdEDHpoUwYp" width="100%" />
 
 <h1 align="left">
   Goodbye.31
