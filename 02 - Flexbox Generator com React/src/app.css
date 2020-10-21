@@ -1,0 +1,138 @@
+.app {
+  display: flex;
+  background: #1f232a;
+  height: 100%;
+  max-height: 650px;
+  width: 100%;
+  max-width: 1000px;
+  color: #FFFFFF;
+}
+
+.app .controller,
+.app .output {
+  display: flex;
+  height: 100%;
+  width: 50%;
+}
+
+.app .controller {
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.controller .controller-header {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controller .controller-header h1 {
+  margin-right: auto;
+}
+
+.controller .controller-header img {
+  height: 100%;
+}
+
+.controller h3 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.controller .property-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: space-evenly;
+}
+
+.controller .property-item {
+  min-width: 50%;
+  width: auto;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.controller .property-item select {
+  width: 100%;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.controller a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.controller a:hover {
+  text-decoration: underline;
+}
+
+.controller a:first-of-type {
+  margin: 30px 0 10px 0;
+  font-size: larger;
+}
+
+.app .output {
+  flex-direction: column;
+}
+
+.app .output .output-view {
+  height: 50%;
+  width: 100%;
+  background: #fafafa;
+  color: #111111;
+}
+
+.app .output .output-view p {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: dodgerblue;
+  color: #fff;
+  font-size: 2em;
+  border-radius: 50%;
+}
+
+.app .output .output-code {
+  height: 50%;
+  width: 100%;
+  background: #e0e0e0;
+  color: #111111;
+  font-family: monospace;
+  overflow-x: hidden;
+  padding: 10px;
+}
+
+.app .output .output-code .output-code-text {
+  margin-left: 16px;
+}
+
+@media(max-width: 800px) {
+  .app {
+    flex-direction: column;
+    max-height: 100%;
+  }
+  .app .controller {
+    width: 100%;
+  }
+  .app .output {
+    width: 100%;
+  }
+  .app .output .output-view {
+    height: 60%;
+  }
+  .app .output .output-code {
+    height: 40%;
+  }
+  .app .output .output-view p {
+    height: 90px;
+    width: 90px;
+  }
+}
