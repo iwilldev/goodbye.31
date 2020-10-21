@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+  <title>Calculadora com JavaScript</title>
+</head>
+<body>
+  <div class="container">
+      <form class="calculator" name="calc">
+        <textarea type="text " class="value" name="txt" readonly=""></textarea>
+        <div class="logo"></div>
+        <span class="num operator wide" onclick="document.calc.txt.value =''">C</span>
+        <span class="num operator" onclick="inputOperator('/')">/</span>
+        <span class="num" onclick="inputNumber('7')">7</span>
+        <span class="num" onclick="inputNumber('8')">8</span>
+        <span class="num" onclick="inputNumber('9')">9</span>
+        <span class="num operator" onclick="inputOperator('*')">*</span>
+        <span class="num" onclick="inputNumber('4')">4</span>
+        <span class="num" onclick="inputNumber('5')">5</span>
+        <span class="num" onclick="inputNumber('6')">6</span>
+        <span class="num operator" onclick="inputOperator('-')">-</span>
+        <span class="num" onclick="inputNumber('1')">1</span>
+        <span class="num" onclick="inputNumber('2')">2</span>
+        <span class="num" onclick="inputNumber('3')">3</span>
+        <span class="num operator" onclick="inputOperator('+')">+</span>
+        <span class="num" onclick="inputNumber('0')">0</span>
+        <span class="num" onclick="inputNumber('00')">00</span>
+        <span class="num" onclick="inputNumber('.')">,</span>
+        <span class="num operator" onclick="displayResult()">=</span>
+      </form>
+      <a href="https://omagotemum.site">Made by Mago</a>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/mathjs@7.5.1/dist/math.min.js"></script>
+</body>
+</html>

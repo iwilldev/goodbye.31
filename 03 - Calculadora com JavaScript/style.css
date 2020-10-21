@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, 
+body {
+    height: 100%;
+}
+
+body {
+  font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+  background: #333333;
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  background: cadetblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  max-width: 320px;
+  height: 560px;
+  background: #e0e0e0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.value {
+  grid-column: span 4;
+  width: 100%;
+  border: 0;
+  background: #111111;
+  color: #fafafa;
+  text-align: right;
+  padding: 10px;
+  font-size: 3em;
+  resize: none;
+  font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+}
+
+.calculator .num {
+  border: 0;
+  margin: 1px;
+  cursor: pointer;
+  background: #fafafa;
+  color: #333333;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator .logo {
+  margin: 1px;
+  background: #F0DB4F url('js.svg') no-repeat bottom right;
+  background-size: 90%;
+}
+
+.calculator .num:hover {
+  background: #205020;
+  color: #FFFFFF;
+}
+
+.calculator .operator {
+  background: #333333;
+  color: #fafafa;
+  font-size: 1.2rem;
+}
+
+.calculator .wide {
+  grid-column: span 2;
+  width: 99%;
+}
+
+.container a {
+  margin-top: 10px;
+  text-decoration: none;
+  color: #333333;
+  font-size: 1rem;
+}
+
+.container a:hover {
+  text-decoration: underline;
+}
+
+@media(max-width: 700px) {
+  .calculator {
+    
+  }
+}
