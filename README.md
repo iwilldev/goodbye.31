@@ -39,7 +39,7 @@ Criado com 'create-react-app', pode ser executada e enviada para a produção co
 <h4 align="left">Como funciona?</h4>
 <p align="left">No controller, cada 'select' altera (através da 'onChange') uma propriedade (aplicada com spread operator) a um objeto armazenado em um estado (criado com 'useState') em sintaxe JavaScript.</p>
 <p align="left">Esses estilos são aplicados ao container do preview através de sua propriedade 'style'.</p>
-<p align="left">Esse objeto é percorrido e retorna um array com as propriedades (que são reescritas de camelCase para kebab-case, através do método 'replace()') e seus valores, quando não forem padrão, concatenando os textos no formato CSS, que é impresso na tela, com quebra de linha, utilizando o React HTML Parser.
+<p align="left">Esse objeto é percorrido, dentro de um hook de efeito, e retorna um array com as propriedades (que são reescritas de camelCase para kebab-case, através do método 'replace()') e seus valores, quando não forem padrão, concatenando os textos no formato CSS, que é impresso na tela, com quebra de linha, utilizando o React HTML Parser.
 </p>
 
 [Veja ao vivo](https://g31-flexbox-generator.vercel.app/)
