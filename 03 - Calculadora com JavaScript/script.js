@@ -3,12 +3,18 @@ let isLastInputANumber = false;
 let isResultDisplayed = false;
 screen.value = '';
 
+function clearScreen() {
+  isLastInputANumber = false;
+  isResultDisplayed = false;
+  screen.value = '';
+}
+
 function inputOperator(key) {
   if (isLastInputANumber) {
     screen.value += key;
+    isLastInputANumber = false;
+    isResultDisplayed = false;
   }
-  isLastInputANumber = false;
-  isResultDisplayed = false;
 }
 
 function inputNumber(key) {
