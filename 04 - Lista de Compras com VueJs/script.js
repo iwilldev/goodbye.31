@@ -2,8 +2,9 @@ let shoppingList = new Vue ({
   el: '#shopping-list',
   data: {
     state: 'default',
-    header: 'Lista de Compras',
-    newItem: '',
+    header: 'Loja do Mago',
+    shopMessage: 'Seu carrinho está vazio. Compre alguns itens.',
+    endMessage: 'Seu pedido foi finalizado! Só não garantimos a entrega!',
     products: [
       {
         label: 'Troféu de Melhor Desenvolvedor da Semana',
@@ -72,7 +73,6 @@ let shoppingList = new Vue ({
     },
     changeState: function(newState) {
       this.state = newState;
-      this.newItem = '';
     },
     togglePurchased: function(item) {
       item.purchased = !item.purchased;

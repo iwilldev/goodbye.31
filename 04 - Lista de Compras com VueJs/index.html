@@ -20,15 +20,18 @@
       >Ver Loja</button>
 
       <button class="cancel-button"
-        v-else 
+        v-if="state === 'edit'" 
         @click="changeState('default')"
       >Fechar Loja</button>
 
+      <button class="cancel-button"
+        v-if="state === 'finished'" 
+        @click="changeState('edit')"
+      >Voltar</button>
+
     </div>
 
-    <div class="input-container"
-      v-if="state === 'edit'"
-    >
+    <div class="input-container" v-if="state === 'edit'">
       <ul>
         <li v-for="product in products" :class="[product.purchased ? 'purchased' : '']">
           <p>{{ product.label }}</p>
@@ -37,18 +40,22 @@
           <button v-else @click="() => {dropItem(product); product.purchased = false}">Remover</button>
         </li>
       </ul>
-      
-
     </div>
-    <ul>
-      <p v-if="items.length === 0">Seu carrinho está vazio. Compre alguns itens.</p>
-      <li v-else v-for="item in reversedItems" @click="togglePurchased(item)">
+
+    <h3 v-if="state === 'finished'">{{ endMessage}}</h3>
+    <h3 v-if="items.length === 0">{{ shopMessage }}</h3>
+    <ul v-else>
+      <li v-for="item in reversedItems" @click="togglePurchased(item)">
         <img :src="item.image" alt="">
       </li>
     </ul>
+    <button v-if="items.length > 0 && state !== 'finished'" @click="changeState('finished')">Finalizar</button>
+
+
     <div class="footer">
       <p><a href="https://omagotemum.site">Made By Mago</a> - Ícones por <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a> em <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
     </div>
+
   </div>
 
   <script src="https://unpkg.com/vue"></script>
