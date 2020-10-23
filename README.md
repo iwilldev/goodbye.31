@@ -60,3 +60,18 @@ Criado com 'create-react-app', pode ser executada e enviada para a produção co
 <p align="left">Os dados digitados são armazenados e exibidos em uma 'textarea' (tela da calculadora) alterando o 'value' do elemento. Quando um número é digitado, é feita uma validação (através da função inputNumber()), que verifica se o conteúdo na tela é o resultado de uma expressão recém-calculada. Caso positivo, o número substitui o resultado, iniciando uma nova expressão. Caso contrário, como na presença de um número seguido de um operador, o número é inserido dando continuidade a expressão. Para a inclusão de um operador, é feita uma outra validação (através da função inputOperator()) que evita a inserção seguida de mais de um operador. O botão 'C' executa a função clearScreen() que reseta a calculadora para seu estado inicial. O botão '=' executa a função displayResult(), que utiliza o método 'evaluate()' da biblioteca Math.js, para transformar a string com os números e operadores em uma expressão, retornando seu resultado, além de informar que o conteúdo na tela é um resultado, reiniciando a primeira validação.</p>
 
 [Veja ao vivo](https://g31-calculadora-javascript.now.sh/)
+
+-----------------------------------------------------------------------------------------------------
+
+<h3 align="left">04 - Lista de Compras com VueJs</h3>
+<img src="https://drive.google.com/uc?export=view&id=1jL09UxOBXwkadSs12C7NFttdC4f9Kdpy" width="360" />
+<p align="left">Loja do Mago, um shopping fake que vende itens e habilidades para desenvolvedores. Construído com VueJs, foi feita para explorar conceitos de reatividade, renderização condicional, binding, entre outros recursos como a criação e utilização de métodos na instância utilizada.</p>
+
+<h4 align="left">Criado com:</h4>
+<p align="left">VueJs - Scripts e renderização</p>
+<p align="left">CSS Flexbox.</p>
+
+<h4 align="left">Como funciona?</h4>
+<p align="left">Uma instância Vue foi criada no elemento '#shopping-list', que contempla todos os itens da aplicação. Em seu estado 'default', a lista de itens da loja está oculta, sendo exibido apenas os itens selecionados (ou uma mensagem de carrinho vazio, caso nenhum item tenha sido escolhido na lista). Quando o botão 'Ver Loja' é clicado, o estado da instância é alterado para 'edit', exibindo os produtos disponíveis acima do resultado da loja. Clicando em 'comprar', o item selecionado é adicionado na lista de compras e tem sua classe e botão alterados, impedindo a inserção duplicada, através de um bind que verifica sua propriedade 'purchased', um booleano. Quando o botão remover é clicado, ele é removido da lista e volta ao seu comportamento e aparência padrão. Na lista de compras, havendo presença de itens selecionados, surge um botão 'finalizar' que direciona o usuário a um novo estado ('finished') que exibe uma mensagem de pedido finalizado.</p>
+
+[Veja ao vivo](https://g31-lista-de-compras-vuejs.now.sh/)
