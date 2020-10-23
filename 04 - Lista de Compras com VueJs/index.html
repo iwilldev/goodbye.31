@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Lista de Compras com VueJs</title>
+</head>
+<body>
+
+  <div id="shopping-list">
+
+    <div class="header">
+
+      <h1>{{ header }}</h1>
+
+      <button 
+        v-if="state === 'default'" 
+        @click="changeState('edit')"
+      >Ver Loja</button>
+
+      <button class="cancel-button"
+        v-else 
+        @click="changeState('default')"
+      >Fechar Loja</button>
+
+    </div>
+
+    <div class="input-container"
+      v-if="state === 'edit'"
+    >
+      <ul>
+        <li v-for="product in products" :class="[product.purchased ? 'purchased' : '']">
+          <p>{{ product.label }}</p>
+          <img :src="product.image" alt="">
+          <button v-if="!product.purchased" @click="() => {saveItem(product); product.purchased = true}">Comprar</button>
+          <button v-else @click="() => {dropItem(product); product.purchased = false}">Remover</button>
+        </li>
+      </ul>
+      
+
+    </div>
+    <ul>
+      <p v-if="items.length === 0">Seu carrinho está vazio. Compre alguns itens.</p>
+      <li v-else v-for="item in reversedItems" @click="togglePurchased(item)">
+        <img :src="item.image" alt="">
+      </li>
+    </ul>
+    <div class="footer">
+      <p><a href="https://omagotemum.site">Made By Mago</a> - Ícones por <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a> em <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/vue"></script>
+  <script src="script.js"></script>
+</body>
+</html>
