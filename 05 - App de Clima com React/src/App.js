@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import searchIcon from './assets/ui/search.svg';
+
 const api = {
   key: "a71ec159d030652ca119d52d4fef1675",
   base: "https://api.openweathermap.org/data/2.5/"
@@ -12,14 +14,17 @@ function App() {
 
   const search = evt => {
     if (evt.key === "Enter") {
-      fetch(`${api.base}weather?q=${query}&lang=pt_br&units=metric&APPID=${api.key}`)
+      requestAPI();
+    }
+  }
+
+  const requestAPI = () => {
+    fetch(`${api.base}weather?q=${query}&lang=pt_br&units=metric&APPID=${api.key}`)
       .then(res => res.json())
       .then(result => {
         setQuery('');
         setWeather(result);
-        console.log(result)
       });
-    }
   }
 
   const dateBuilder = (d) => {
@@ -78,6 +83,12 @@ function App() {
               value={query}
               onKeyPress={search}
             />
+            <button>
+              <img 
+                src={searchIcon} 
+                onPointerDown={requestAPI}
+              />
+            </button>
           </div>
           {(typeof weather.main != "undefined") ? (
             <>
@@ -94,7 +105,7 @@ function App() {
                 </div>
               </div>
             </>
-          ) : (<></>)}
+          ) : (<p className="info-message">Busque uma cidade na barra acima</p>)}
         </main>
       </div>
       <a href="https://omagotemum.site" target="_blank" rel="noreferrer noopener">Made by Mago</a>
