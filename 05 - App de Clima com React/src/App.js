@@ -87,6 +87,7 @@ function App() {
               <img 
                 src={searchIcon} 
                 onPointerDown={requestAPI}
+                alt="Buscar"
               />
             </button>
           </div>
