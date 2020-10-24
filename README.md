@@ -82,6 +82,8 @@ Criado com 'create-react-app', pode ser executada e enviada para a produção co
 <img src="https://drive.google.com/uc?export=view&id=1AqJf9-hZGo_z7FM8m5y34xTbVn9SFxmS" width="360" />
 <p align="left">Utilizando a API da OpenWeatherMap, a aplicação permite buscar o clima atual em qualquer local do mundo, através da barra de busca, exibindo um resultado com aparência dinâmica que varia conforme a condição do clima e a temperatura do local buscado.</p>
 
+<p align="left">ATUALIZAÇÃO: Seguindo as dicas do mestre <a href="https://www.linkedin.com/in/emanuelcandido/">Emanuel Cândido</a> , incluí um botão ao lado da caixa de busca, além de uma mensagem alternativa para quando a 'query' da busca estiver vazia, orientando o usuário a buscar a cidade através da barra.</p>
+
 <h4 align="left">Criado com:</h4>
 <p align="left">React</p>
 <p align="left">CSS Flexbox</p>
