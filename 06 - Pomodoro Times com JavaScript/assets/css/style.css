@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #000 url('../img/stars.png') repeat top center;  
+}
+
+main {
+  height: 100%;
+  background: transparent url('../img/shadow.png') repeat top center;
+  animation: move-shadow 200s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 100%;
+  max-height: 650px;
+  width: 100%;
+  max-width: 300px;
+
+  color: #fff;
+  
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container input {
+  all: unset;
+  background: none;
+  width: 3rem;
+  font-size: 100%;
+  margin-left: auto;
+  margin-right: 0.8rem;
+}
+
+.container .focus-timer,
+.container .break-timer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 5rem;
+  border-radius: 25px 25px 0 0;
+}
+
+.container .focus-timer {
+  background: rgba(23, 173, 85, 0.8);
+}
+
+.container .break-timer {
+  background: rgba(173, 23, 23, 0.8);
+}
+
+.container .label {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  border-radius: 0 0 25px 25px;
+}
+
+.container .break-timer + .label {
+  background: rgba(173, 23, 23, 0.8);
+}
+
+.container .focus-timer + .label {
+  background: rgba(23, 173, 85, 0.8);
+}
+
+.container .label#cycles {
+  border-radius: 25px;
+  color: #111;
+}
+
+.container .semicolon {
+  font-size: 25%;
+}
+
+.container .focus-timer .focus-seconds,
+.container .break-timer .break-seconds {
+  font-size: 25%;
+}
+
+.container .button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container button {
+  all: unset;
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  background: #fff;
+  transition: background 0.4s;
+  cursor: pointer;
+}
+
+.container button.start {
+  background: rgba(23, 173, 85, 0.8);
+}
+
+.container button.pause {
+  background: rgba(173, 23, 23, 0.8);
+}
+
+.container button.reset {
+  background: rgba(255, 255, 255, 0.8);
+  color: #111;
+}
+
+.container button.start:hover {
+  background: rgb(23, 173, 85);
+}
+
+.container button.pause:hover {
+  background: rgb(173, 23, 23);
+}
+
+.container button.reset:hover {
+  background: rgb(255, 255, 255);
+  color: #111;
+}
+
+@keyframes move-shadow {
+	from {background-position:0 0;}
+	to {background-position:-10000px 5000px;}
+}

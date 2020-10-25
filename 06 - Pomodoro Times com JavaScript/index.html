@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Pomodoro Timer</title>
+</head>
+<body>
+  <main>
+    <div class="container">
+
+      <div class="focus-timer">
+        <p class="focus-minutes">25</p>
+        <p class="semicolon">:</p>
+        <p class="focus-seconds">00</p>
+      </div>
+
+      <div class="label">
+        <p  id="focus">Foco:</p>
+        <input
+          id="focus-input"
+          value="25"
+          type="number"
+          step="5"
+          min="25"
+          max="50"
+        > min
+      </div>
+
+      <div class="break-timer">
+        <p class="break-minutes">5</p>
+        <p class="semicolon">:</p>
+        <p class="break-seconds">00</p>
+      </div>
+
+      <div class="label">
+        <p id="break">Pausa:</p>
+        <input
+          id="break-input"
+          value="5"
+          type="number"
+          step="5"
+          min="5"
+          max="20"
+        > min
+      </div>
+      
+
+        
+      <p class="label" id="cycles"><span class="cycles-counter">0</span> ciclos completos</p>
+
+      <div class="button-container">
+        <button class="start">Iniciar</button>
+        <button class="pause">Pausar</button>
+        <button class="reset">Reset</button>
+      </div>
+
+    </div>
+  </main>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
