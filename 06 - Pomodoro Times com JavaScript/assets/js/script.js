@@ -56,33 +56,45 @@ breakInput.addEventListener('change', function() {
   breakInput.removeEventListener('change', this);
 })
 
+let pauseTime = false;
+
 function timer() {
 
-  if(focusSeconds.innerText != 0){
-    focusSeconds.innerText--;
-  } else if(focusMinutes.innerText != 0 && focusSeconds.innerText == 0) {
-    focusSeconds.innerText = 59;
-    focusMinutes.innerText--;
+  if (!pauseTime) {
+    if(focusSeconds.innerText != 0){
+      focusSeconds.innerText--;
+      return null;
+    } else if(focusMinutes.innerText != 0 && focusSeconds.innerText == 0) {
+      focusSeconds.innerText = 59;
+      focusMinutes.innerText--;
+      return null;
+    }
+    pauseTime = true;
+    window.focus();
+    alert('Dê uma pausa!');
   }
-
-  if(focusMinutes.innerText == 0 && focusSeconds.innerText == 0) {
+  
+  if (pauseTime) {
     if(breakSeconds.innerText != 0){
       breakSeconds.innerText--;
+      return null;
     } else if(breakMinutes.innerText != 0 && breakSeconds.innerText == 0) {
       breakSeconds.innerText = 59;
       breakMinutes.innerText--;
+      return null;
     }
+    pauseTime = false;
+    alert('Volte ao foco!');
   }
 
-  if(focusMinutes.innerText == 0 && focusSeconds.innerText == 0 && breakMinutes.innerText == 0 && breakSeconds.innerText == 0) {
-    focusMinutes.innerText = focusInitialTime;
-    focusSeconds.innerText = "00";
-    
-    breakMinutes.innerText = breakInitialTime;
-    breakSeconds.innerText = "00";
+  focusMinutes.innerText = focusInitialTime;
+  focusSeconds.innerText = "00";
+  
+  breakMinutes.innerText = breakInitialTime;
+  breakSeconds.innerText = "00";
 
-    document.querySelector('main .container #cycles .cycles-counter').innerText++;
-  }
+  document.querySelector('main .container #cycles .cycles-counter').innerText++;
+  
 }
 
 function stopInterval() {
