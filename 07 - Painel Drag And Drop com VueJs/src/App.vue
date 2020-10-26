@@ -31,6 +31,7 @@
       </Board>
 
     </main>
+    <a href="https://omagotemum.site">Made by Mago</a>
   </div>
 </template>
 
@@ -179,6 +180,12 @@ header .input-container button {
 
   margin-bottom: 15px;
   padding: 15px 25px;
+}
+
+main + a {
+  color: #f0f0f0;
+  text-decoration: none;
+  margin-top: 0.5rem;
 }
 
 </style>
