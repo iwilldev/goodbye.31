@@ -108,3 +108,18 @@ Criado com 'create-react-app', pode ser executada e enviada para a produção co
 <p align="left">Os elementos de texto dos timers, os botões e os inputs do tempo são selecionados no JavaScript com o método 'querySelector'. Os botões executam funções através de Event Listeners que resetam (botão Reset) a página, além de iniciar (botão Iniciar) ou interromper (botão Pausar) a função 'timer', que executa uma série de condicionais nas propriedades 'innerText' dos elementos de texto, realizando o decremento adequado a funcionalidade de timer, manipulando diretamente os dados dos elementos no DOM. Ao fim dos ciclos de foco e pausa, é exibido um alerta ao usuário, para que ele possa dar sequência ao próximo ciclo. Finalizados os dois, é feito um incremento no contador de ciclos.</p>
 
 [Veja ao vivo](https://g31-pomodoro-timer.now.sh/)
+
+-----------------------------------------------------------------------------------------------------
+
+<h3 align="left">07 - Painel Drag and Drop com Vue.js</h3>
+<img src="https://drive.google.com/uc?export=view&id=1GqVizuvCB5olm_CxuuCK5L5HLrZkjjle" width="360" />
+<p align="left">Painel no estilo kan ban, com três estados para as atividades, que podem ser incluídas através do formulário do cabeçalho e movidas de um quadro para o outro.</p>
+
+<h4 align="left">Criado com:</h4>
+<p align="left">Vue.js (Vue CLI)</p>
+<p align="left">CSS Flexbox</p>
+
+<h4 align="left">Como funciona?</h4>
+<p align="left">O formulário do topo usa um input com v-model para a variável 'newCard' que é adicionada, através do método 'addCard()' ao array 'cards', que é renderizado no primeiro quadro, através da diretiva v-for. Quando um card é selecionado, sua ID é armazenada no Local Storage e seu display é alterado para 'none', através de um método no componente 'Card'. Quando o usuário solta o card em um quadro, um método do componente 'Board' é executado, utilizando a ID armazenada no Local Storage para assumir o card como filho, através do método 'appendChild()'. </p>
+
+[Veja ao vivo](https://g31-painel-drag-and-drop.now.sh/)
