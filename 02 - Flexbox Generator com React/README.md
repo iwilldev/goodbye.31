@@ -20,6 +20,7 @@ Criado com 'create-react-app', pode ser executada e enviada para a produção co
 </p>
 
 <h4 align="left">Como executar localmente:</h4>
+<p align="left"><b>yarn install</b>: Instala as dependências necessárias para o projeto</p>
 <p align="left"><b>yarn start</b>: Executa o projeto em modo de desenvolvimento em localhost:3000</p>
 
 Mais scripts disponíveis na documentação do [Create React App](https://github.com/facebook/create-react-app).
