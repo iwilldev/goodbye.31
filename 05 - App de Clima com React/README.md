@@ -13,6 +13,7 @@
 <p align="left">Quando o usuário busca um local na barra de busca, a aplicação faz uma requisição a API, retornando os dados para exibição. Na renderização do container do app, são feitas verificações condicionais que retornam até nove variações de ícones conforme o clima e duas baseadas na temperatura. Após verificação, são aplicadas as classes correspondentes ao resultado obtido através da API.</p>
 
 <h4 align="left">Como executar localmente:</h4>
+<p align="left"><b>yarn install</b>: Instala as dependências necessárias para o projeto</p>
 <p align="left"><b>yarn start</b>: Executa o projeto em modo de desenvolvimento em localhost:3000</p>
 
 Mais scripts disponíveis na documentação do [Create React App](https://github.com/facebook/create-react-app).
