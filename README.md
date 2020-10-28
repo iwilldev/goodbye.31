@@ -123,3 +123,33 @@ Criado com 'create-react-app', pode ser executada e enviada para a produção co
 <p align="left">O formulário do topo usa um input com v-model para a variável 'newCard' que é adicionada, através do método 'addCard()' ao array 'cards', que é renderizado no primeiro quadro, através da diretiva v-for. Quando um card é selecionado, sua ID é armazenada no Local Storage e seu display é alterado para 'none', através de um método no componente 'Card'. Quando o usuário solta o card em um quadro, um método do componente 'Board' é executado, utilizando a ID armazenada no Local Storage para assumir o card como filho, através do método 'appendChild()'. </p>
 
 [Veja ao vivo](https://g31-painel-drag-and-drop.now.sh/)
+
+-----------------------------------------------------------------------------------------------------
+
+<h3 align="left">08 - Editor de Fotos com React</h3>
+<img src="https://drive.google.com/uc?export=view&id=1_CVbvb6a3_HDQE6VBaf8zw8E392E1iZR" width="360" />
+<p align="left">Editor de fotos que permite carregar uma imagem PNG ou JPG e aplicar filtros CSS nela, com a opção de exportação do canvas onde a imagem foi editada.</p>
+
+<p align="left">Nota de má funcionalidade: no mobile, o app não exporta a imagem da maneira adequada. Por algum motivo, o canvas e a sua referência no DOM parecem ter medidas distintas, fazendo com que a imagem seja exportada com faixas pretas a direita e abaixo. Fico aberto a sugestões sobre como resolver esse bug.</p>
+
+<h4 align="left">Criado com:</h4>
+<p align="left">React</p>
+
+<h4 align="left">Como funciona?</h4>
+<p align="left">No cabeçalho, quando uma imagem é selecionada, uma função é executada através do atributo 'onChange' do input, que reseta os valores de configuração padrão (atribuindo a constante 'defaultValues' ao estado 'adjustedValues') e gera uma url temporária para a imagem que renderiza na 'img' abaixo do header. Essa imagem recebe os estilos através de um hook de efeito, que atualiza uma template com a propriedade filter e todos os valores aplicáveis através dos controles abaixo, vindos do estado 'adjustedValues'. Nos controles, os botões mudam o estado 'valuesIndex' que é utilizado para acessar os valores individuais da 'adjustedValue'. Quando o input range é alterado, o filtro selecionado nos botões é aplicado através do atributo 'onChange' desse input. Para a exportação, foi utilizada a dependência 'html-to-image', que imprime o canvas com os filtros aplicados em uma imagem JPEG.</p>
+
+[Veja ao vivo]()
+
+-----------------------------------------------------------------------------------------------------
+
+<h3 align="left">09 - App de Meditação com JavaScript</h3>
+<img src="https://drive.google.com/uc?export=view&id=1rbykzmNhNZNZ553OrRvAuwx4nLgbc2Cq" width="360" />
+<p align="left">App para auxiliar a meditação, com dois temas ambientes (e vídeos de fundo correspondentes), três opções de duração e botão play/pause com relógio regressivo.</p>
+
+<h4 align="left">Criado com:</h4>
+<p align="left">JavaScript</p>
+
+<h4 align="left">Como funciona?</h4>
+<p align="left">Os elementos do DOM são capturados no script através do método 'querySelector', além de declaradas a medida da circunferência do círculo animado ao redor do play (outlineLength) e o tempo de duração da aplicação em modo play (fakeDuration). Para mudar o tema ambiente, utiliza-se um forEach nos botões capturados e atribui-se um Event Listener (pointerdown) para cada um, que altera as sources do video e do som, através dos atributos 'data-video' e 'data-sound' nos elementos HTML. Para mudar o tempo, também é utilizado um forEach nos botões, seguidos de Listeners (pointerdown) que alteram a 'fakeDuration', através do atributo 'data-time' nos elementos, além de alterar o texto do relógio regressivo. No botão play, também há um Event Listener (pointerdown), que executa a função 'checkPlaying()', verificando se o som está pausado ou em execução, tomando a ação correspondente com o vídeo de fundo, o som selecionado e o ícone do botão, que alterna entre play e pause. Por último, é executado o método 'ontimeupdate', no elemento de áudio, que decrementa o relógio, anima o círculo ao redor do botão e retorna o app ao estado original quando a 'fakeDuration' é menor que o tempo de execução, com vídeo e áudio pausados e botão habilitado como play.</p>
+
+[Veja ao vivo]()
