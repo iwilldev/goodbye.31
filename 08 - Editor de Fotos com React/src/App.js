@@ -53,11 +53,11 @@ function App() {
 
   }, [adjustedValues])
 
-  function savetoJpeg() {
+  function saveToJpeg() {
     htmlToImage.toJpeg(document.querySelector('#canva-image'), { quality: 1 })
     .then(function (dataUrl) {
       var link = document.createElement('a');
-      link.download = 'my-image-name.jpeg';
+      link.download = 'editei-com-o-mago.jpeg';
       link.href = dataUrl;
       link.click();
     });
@@ -71,7 +71,6 @@ function App() {
           <div className="input">
             <p>Insira sua imagem:</p>
             <input type="file" accept="image/jpg, image/png, image/jpeg" onChange={(event) => {
-              console.log(event.target.files)
               setAdjustedValues(defaulValues);
 
               var img = new Image();
@@ -81,7 +80,7 @@ function App() {
           </div>
           <button 
             className={!previewImage ? 'hidden' : ''} 
-            onClick={savetoJpeg}
+            onClick={saveToJpeg}
           >Salvar</button>
         </header>
         <img 
