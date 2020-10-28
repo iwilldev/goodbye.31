@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+<h3 align="left">08 - Editor de Fotos com React</h3>
+<img src="https://drive.google.com/uc?export=view&id=1_CVbvb6a3_HDQE6VBaf8zw8E392E1iZR" width="360" />
+<p align="left">Editor de fotos que permite carregar uma imagem PNG ou JPG e aplicar filtros CSS nela, com a opção de exportação do canvas onde a imagem foi editada.</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="left">Nota de má funcionalidade: no mobile, o app não exporta a imagem da maneira adequada. Por algum motivo, o canvas e a sua referência no DOM parecem ter medidas distintas, fazendo com que a imagem seja exportada com faixas pretas a direita e abaixo. Fico aberto a sugestões sobre como resolver esse bug.</p>
 
-## Available Scripts
+<h4 align="left">Criado com:</h4>
+<p align="left">React</p>
 
-In the project directory, you can run:
+<h4 align="left">Como funciona?</h4>
+<p align="left">No cabeçalho, quando uma imagem é selecionada, uma função é executada através do atributo 'onChange' do input, que reseta os valores de configuração padrão (atribuindo a constante 'defaultValues' ao estado 'adjustedValues') e gera uma url temporária para a imagem que renderiza na 'img' abaixo do header. Essa imagem recebe os estilos através de um hook de efeito, que atualiza uma template com a propriedade filter e todos os valores aplicáveis através dos controles abaixo, vindos do estado 'adjustedValues'. Nos controles, os botões mudam o estado 'valuesIndex' que é utilizado para acessar os valores individuais da 'adjustedValue'. Quando o input range é alterado, o filtro selecionado nos botões é aplicado através do atributo 'onChange' desse input. Para a exportação, foi utilizada a dependência 'html-to-image', que imprime o canvas com os filtros aplicados em uma imagem JPEG.</p>
 
-### `yarn start`
+<h4 align="left">Como executar localmente:</h4>
+<p align="left"><b>yarn install</b>: Instala as dependências necessárias para o projeto</p>
+<p align="left"><b>yarn start</b>: Executa o projeto em modo de desenvolvimento em localhost:3000</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Mais scripts disponíveis na documentação do [Create React App](https://github.com/facebook/create-react-app).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Veja ao vivo](https://g31-editor-de-fotos.now.sh/)
