@@ -16,3 +16,5 @@
 <p align="left"><a href="https://github.com/euwilliamgoncalves/goodbye.31/tree/main/07%20-%20Painel%20Drag%20And%20Drop%20com%20VueJs">07 - Painel Drag and Drop com Vue.js</a></p>
 <p align="left"><a href="https://github.com/euwilliamgoncalves/goodbye.31/tree/main/08%20-%20Editor%20de%20Fotos%20com%20React">08 - Editor de Fotos com React</a></p>
 <p align="left"><a href="https://github.com/euwilliamgoncalves/goodbye.31/tree/main/09%20-%20Meditation%20App%20com%20JavaScript">09 - App de Meditação com JavaScript</a></p>
+<p align="left"><a href="https://github.com/euwilliamgoncalves/goodbye.31/tree/main/10%20-%20GitHub%20Card%20com%20Vue.js">10 - GitHub Card com Vue.js</a></p>
+<p align="left"><a href="https://github.com/euwilliamgoncalves/goodbye.31/tree/main/11%20-%20Image%20Gallery%20com%20React">11 - Image Gallery com React</a></p>
