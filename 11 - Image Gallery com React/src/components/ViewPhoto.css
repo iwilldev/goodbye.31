@@ -1,0 +1,70 @@
+.view-photo {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.view-photo .view-photo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+  background: rgb(16, 74, 107);
+  color: #fff;
+}
+
+.view-photo .view-photo-header h3 {
+  font-weight: 400;
+}
+
+.view-photo .view-photo-header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: large;
+}
+
+.view-photo .view-photo-header a {
+  color: #fff;
+}
+
+.view-photo .image-view {
+  height: calc(100vh - 140px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  overflow: hidden;
+}
+
+.view-photo .image-view a {
+  height: 95%;
+}
+
+.view-photo .image-view img {
+  height: 100%;
+  cursor: pointer;
+}
+
+.view-photo .author {
+  background: rgb(16, 74, 107);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+}
+
+.view-photo .author img {
+  height: 48px;
+  border-radius: 50%;
+}
+
+.view-photo .author a {
+  color: #fff;
+}
