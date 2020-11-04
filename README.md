@@ -18,3 +18,7 @@
 <p align="left"><a href="https://github.com/euwilliamgoncalves/goodbye.31/tree/main/09%20-%20Meditation%20App%20com%20JavaScript">09 - App de Meditação com JavaScript</a></p>
 <p align="left"><a href="https://github.com/euwilliamgoncalves/goodbye.31/tree/main/10%20-%20GitHub%20Card%20com%20Vue.js">10 - GitHub Card com Vue.js</a></p>
 <p align="left"><a href="https://github.com/euwilliamgoncalves/goodbye.31/tree/main/11%20-%20Image%20Gallery%20com%20React">11 - Image Gallery com React</a></p>
+<p align="left"><a href="https://github.com/euwilliamgoncalves/goodbye.31/tree/main/12%20-%20Quadro%20de%20Desenho%20com%20JavaScript">12 - Quadro de Desenho com JavaScript</a></p>
+<p align="left"><a href="https://github.com/euwilliamgoncalves/goodbye.31/tree/main/13%20-%20Space%20Shooter%20com%20Vue.js">13 - Space Shooter com Vue.js</a></p>
+<p align="left"><a href="https://github.com/euwilliamgoncalves/goodbye.31/tree/main/14%20-%20Jogo%20da%20Velha%20com%20React">14 - Jogo da Velha com React</a></p>
+<p align="left"><a href="https://github.com/euwilliamgoncalves/goodbye.31/tree/main/15%20-%20Bloco%20de%20Notas%20com%20JavaScript">15 - Bloco de Notas com JavaScript</a></p>
