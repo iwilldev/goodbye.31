@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <title>Space Shooter</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div v-if="energy > 0" class="game-container" :class="enemyReached ? 'enemy-reached' : ''">
+      <div class="info">
+        <h1>Space Shooter</h1>
+        <h3>No PC, use "A" e "D" para virar e "ESPAÇO" para atirar.</h3>
+      </div>
+      <h3>Pontos: {{ score }}</h3>
+      <h3>Energia: {{ energy }}</h3>
+      <img 
+        src="./assets/player.svg" 
+        alt="Player" 
+        class="player"
+        :style="[{
+          left: x + 'px', 
+          top: y + 'px', 
+          transform: 'translate(-50%, -50%) rotate(-' + angle + 'deg)'
+        },
+        {
+          
+        }]"
+      >
+      <template v-for="bullet in bullets">
+        <div 
+          class="bullet"
+          :style="[{left: bullet.x + 'px'},
+          {top: bullet.y + 'px'}]"
+        >
+        </div>
+      </template>
+      <template v-for="(enemy,type) in enemies">
+        <img 
+          :style="[{left: enemy.x + 'px'},
+          {top: enemy.y + 'px'}]"
+          :src="`./assets/enemy-${enemy.type}.svg`"
+          class="enemy"
+        >
+      </template>
+      <div class="button-container">
+        <button @click="rotateCounterClockwise()"><i class="fas fa-undo"></i></button>
+        <button @click="fire()"><i class="fas fa-meteor"></i></button>
+        <button @click="rotateClockwise()"><i class="fas fa-undo flip"></i></button>
+      </div>
+    </div>
+    <div v-else class="reload-container">
+      <h1>GAME OVER</h1>
+      <a onclick="window.location.reload()">Tente de novo!</a>
+    </div>
+  </div>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="script.js"></script>
+</body>
+</html>

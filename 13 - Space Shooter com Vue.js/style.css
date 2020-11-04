@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+
+  font-family: monospace;
+  background: rgb(150, 50, 50);
+  color: #eee;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-container {
+  height: 500px;
+  width: 400px;
+  background: #000;
+  position: relative;
+}
+
+.game-container .info {
+  position: absolute;
+  top: -80px;
+  width: 400px;
+  text-align: center;
+}
+
+.game-container h3 {
+  position: absolute;
+  margin: 10px;
+  color: #FFFFFF99;
+}
+
+.game-container h3 + h3 {
+  position: absolute;
+  right: 0;
+  margin: 10px;
+  color: #FFFFFF99;
+}
+
+.game-container .player {
+  height: 35px;
+  width: 35px;
+  filter: drop-shadow(0 0 5px rgb(150, 50, 50));
+  position: absolute;
+  transition: top 10ms left 80ms;
+  z-index: 2;
+}
+
+.game-container .bullet {
+  height: 5px;
+  width: 5px;
+  position: absolute;
+  background: crimson;
+  border: 1px solid #fff;
+  filter: drop-shadow(0 0 5px rgb(150, 50, 50));
+  transform: translate(-50%, -50%);
+}
+
+.game-container .enemy {
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  filter: drop-shadow(0 0 5px rgb(50, 138, 150));
+  transform: translate(-50%, -50%);
+}
+
+.enemy-reached {
+  animation-name: enemy;
+  animation: enemy 1s;
+}
+
+.game-container .button-container {
+  position: absolute;
+  bottom: -70px;
+
+  width: 400px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-container .button-container button {
+  height: 60px;
+  width: 120px;
+  font-size: 2rem;
+}
+
+.game-container .button-container .flip {
+  transform: scaleX(-1);
+}
+
+.reload-container {
+  text-align: center;
+}
+
+.reload-container a {
+  text-decoration: underline;
+  margin-top: 30px;
+}
+
+@keyframes enemy {
+  0% {
+    transform: translate(-1%, 1%);
+  }
+  33% {
+    transform: translate(1%, -1%);
+  }
+  66% {
+    transform: translate(-1%, 1%);
+  }
+  100% {
+    transform: translate(1%, -1%);
+  }
+}
