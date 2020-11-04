@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Quadro de Desenho</title>
+</head>
+<body>
+  <h3>Desenhe no canvas abaixo</h3>
+  <canvas width="420px" height="600px"></canvas>
+  <div class="toolbox">
+    <p>Tamanho:</p>
+    <input onchange="changeBrushSize(event.target.value)" type="range" name="selector" id="selector" value="3" max="20" min="3">
+    <p>Cor:</p>
+    <input onchange="changeBrushColor(event.target.value)" type="color" name="brush-color" id="color">
+    <button onclick="clearCanvas()">Limpar</button>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

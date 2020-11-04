@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  height: -webkit-fill-available;
+}
+
+body {
+  font-family: sans-serif;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  background: darkslategrey;
+}
+
+h3 {
+  color: #fff;
+  text-shadow: 3px 3px 3px #111;
+
+  margin: 1rem 0;
+}
+
+canvas {
+  width: 420px;
+  height: 600px;
+
+  background: #fff;
+  box-shadow: 5px 5px 5px #111;
+
+  z-index: 1;
+}
+
+.toolbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 420px;
+
+  padding: 1rem;
+
+  background: rgb(17, 32, 32);
+  box-shadow: 5px 5px 5px #111;
+
+  z-index: 2;
+}
+
+.toolbox p {
+  margin-right: -20px;
+  font-weight: 600;
+  color: #FFF;
+}
+
+.toolbox #color,
+.toolbox button {
+  height: 2rem;
+  padding: 0.2rem;
+  border: 0;
+  font-weight: 600;
+}
