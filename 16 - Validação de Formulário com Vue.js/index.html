@@ -86,7 +86,7 @@
           :class="{toggle: form.githubUserName}">Seu nome de usuário no GitHub</label>
           <p v-show="$v.form.githubUserName.$pending" class="pending-message">Buscando no GitHub...</p>
           <p 
-            v-if="!$v.form.githubUserName.exists || $v.form.githubUserName.$error" 
+            v-if="!$v.form.githubUserName.exists && $v.form.githubUserName.$error" 
             class="error-message">Usuário não encontrado</p>
       </div>
 
