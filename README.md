@@ -7,7 +7,7 @@
 <h3 align="left">É hora de dar tchau...</h3>
 <p align="left">...aos meus 31 anos! :P.<br>E pra celebrar mais um ano de vida completo, no mês que vem, me desafiei a construir uma aplicação web todo dia, por 31 dias.<br>Acompanhe o repositório, navegue entre as pastas, dê sugestões e vamos juntos nessa jornada!</p>
 
-<p align="left"><a href="https://github.com/euwilliamgoncalves/goodbye.31/tree/main/01%20-%20Chat%20Room%20com%20VueJs%20e%20Firebase">01 - Chat Room com VueJs e Firebase</a></p>
+<p align="left"><a href="https://github.com/euwilliamgoncalves/goodbye.31/tree/main/01%20-%20Chat%20Room%20com%20VueJs%20e%20Firebase">01 - Chat Room com Vue.js e Firebase</a></p>
 <p align="left"><a href="https://github.com/euwilliamgoncalves/goodbye.31/tree/main/02%20-%20Flexbox%20Generator%20com%20React">02 - Flexbox Generator com React</a></p>
 <p align="left"><a href="https://github.com/euwilliamgoncalves/goodbye.31/tree/main/03%20-%20Calculadora%20com%20JavaScript">03 - Calculadora com JavaScript</a></p>
 <p align="left"><a href="https://github.com/euwilliamgoncalves/goodbye.31/tree/main/04%20-%20Lista%20de%20Compras%20com%20VueJs">04 - Lista de Compras com Vue.js</a></p>
@@ -22,3 +22,4 @@
 <p align="left"><a href="https://github.com/euwilliamgoncalves/goodbye.31/tree/main/13%20-%20Space%20Shooter%20com%20Vue.js">13 - Space Shooter com Vue.js</a></p>
 <p align="left"><a href="https://github.com/euwilliamgoncalves/goodbye.31/tree/main/14%20-%20Jogo%20da%20Velha%20com%20React">14 - Jogo da Velha com React</a></p>
 <p align="left"><a href="https://github.com/euwilliamgoncalves/goodbye.31/tree/main/15%20-%20Bloco%20de%20Notas%20com%20JavaScript">15 - Bloco de Notas com JavaScript</a></p>
+<p align="left"><a href="https://github.com/euwilliamgoncalves/goodbye.31/tree/main/16%20-%20Form%20Validation%20com%20Vue.js">16 - Validação de Formulário com Vue.js</a></p>
