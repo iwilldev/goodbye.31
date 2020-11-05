@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validação de Formulários</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="./assets/validators.min.js"></script>
+  <script src="./assets/vuelidate.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Validação de Formulário</h1>
+    <h3>Vue.js e Vuelidate</h3>
+    <form @submit.prevent="submitForm" autocomplete="off">
+
+      <div class="form-group">
+        <input 
+          v-model="form.name"
+          @blur="$v.form.name.$touch()"
+          id="name" 
+          :class="{
+            error: shouldAppendErrorClass($v.form.name),
+            valid: shouldAppendValidClass($v.form.name)
+          }">
+        <label 
+          for="name" 
+          :class="{toggle: form.name}">Nome:</label>
+        <p 
+          v-if="$v.form.name.$error" 
+          class="error-message">O nome é obrigatório</p>
+      </div>
+
+      <div class="form-group">
+        <input 
+          v-model.number="form.age"
+          @blur="$v.form.age.$touch()"
+          id="age" 
+          :class="{
+            error: shouldAppendErrorClass($v.form.age), 
+            valid: shouldAppendValidClass($v.form.age)
+          }">
+        <label 
+          for="age" 
+          :class="{toggle: form.age}">Idade:</label>
+        <div v-if="$v.form.age.$error">
+          <p 
+            v-if="!$v.form.age.required" 
+            class="error-message">A idade é obrigatória</p>
+          <p 
+            v-else-if="!$v.form.age.number" 
+            class="error-message">A idade deve ser um número inteiro</p>
+          <p 
+            v-else-if="!$v.form.age.between" 
+            class="error-message">Você precisa ter entre 12 e 120 anos para continuar</p>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <input 
+          v-model="form.email"
+          @blur="$v.form.email.$touch()"
+          id="email" 
+          :class="{
+            error: shouldAppendErrorClass($v.form.email), 
+            valid: shouldAppendValidClass($v.form.email)}">
+        <label 
+          for="email" 
+          :class="{toggle: form.email}">E-mail:</label>
+          <p 
+            v-if="$v.form.email.$error" 
+            class="error-message">O e-mail não tem um formato válido</p>
+      </div>
+
+      <div class="form-group">
+        <input 
+          v-model.lazy="$v.form.githubUserName.$model"
+          id="github-username" 
+          :class="{
+            error: shouldAppendErrorClass($v.form.githubUserName), 
+            valid: shouldAppendValidClass($v.form.githubUserName)}">
+        <label 
+          for="github-username" 
+          :class="{toggle: form.githubUserName}">Seu nome de usuário no GitHub</label>
+          <p v-show="$v.form.githubUserName.$pending" class="pending-message">Buscando no GitHub...</p>
+          <p 
+            v-if="!$v.form.githubUserName.exists || $v.form.githubUserName.$error" 
+            class="error-message">Usuário não encontrado</p>
+      </div>
+
+      <div class="form-group">
+        <input 
+          v-model="form.time"
+          @blur="$v.form.time.$touch()"
+          id="time" 
+          :class="{
+            error: shouldAppendErrorClass($v.form.time), 
+            valid: shouldAppendValidClass($v.form.time)}">
+        <label 
+          for="time" 
+          :class="{toggle: form.time}">Prefere dia ou noite?</label>
+          <p 
+            v-if="!$v.form.time.dayOrNight && $v.form.time.$error" 
+            class="error-message">Escolha "dia" ou "noite", sem aspas</p>
+      </div>
+
+      <div>
+        <button>Enviar</button>
+      </div>
+    </form>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js" integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ==" crossorigin="anonymous"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
