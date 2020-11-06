@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Are You Human?</title>
+</head>
+<body>
+  <h1>Are you Human?</h1>
+  <form autocomplete="off">
+    <input type="text" name="name" id="name" placeholder="Nome...">
+    
+    <button class="open" type="button">Você é um robô?</button>
+    
+    <div class="test hidden">
+      <div class="fill"></div>
+      <div class="trigger hidden"></div>
+    </div>
+    <p class="test-message hidden">Pressione o quadro e solte quando a barra estiver dentro da área vermelha.</p>
+
+    <button class="submit" type="submit" disabled>Enviar Formulário</button>
+
+    <script src="script.js"></script>
+  </form>
+</body>
+</html>
