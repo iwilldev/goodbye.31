@@ -23,3 +23,4 @@
 <p align="left"><a href="https://github.com/euwilliamgoncalves/goodbye.31/tree/main/14%20-%20Jogo%20da%20Velha%20com%20React">14 - Jogo da Velha com React</a></p>
 <p align="left"><a href="https://github.com/euwilliamgoncalves/goodbye.31/tree/main/15%20-%20Bloco%20de%20Notas%20com%20JavaScript">15 - Bloco de Notas com JavaScript</a></p>
 <p align="left"><a href="https://github.com/euwilliamgoncalves/goodbye.31/tree/main/16%20-%20Form%20Validation%20com%20Vue.js">16 - Validação de Formulário com Vue.js</a></p>
+<p align="left"><a href="https://github.com/euwilliamgoncalves/goodbye.31/tree/main/17%20-%20Orion%20(Space%20Images)%20com%20React">17 - Orion (Imagens do Espaço) com React</a></p>
