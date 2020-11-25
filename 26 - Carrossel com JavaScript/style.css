@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  background: rgb(115, 105, 255);
+}
+
+.carousel {
+  box-shadow: 2px 2px 3px #333333dd;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.image-container {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  transform: translateX(0);
+}
+
+.image-container img {
+  height: 400px;
+  width: 600px;
+}
