@@ -1,5 +1,5 @@
 <h3 align="left">05 - App de Clima com React</h3>
-<img src="https://drive.google.com/uc?export=view&id=1AqJf9-hZGo_z7FM8m5y34xTbVn9SFxmS" width="360" />
+<img src="https://omagotemum.site/assets/img/portfolio/goodbye31/05/project.png" width="640" />
 <p align="left">Utilizando a API da OpenWeatherMap, a aplicação permite buscar o clima atual em qualquer local do mundo, através da barra de busca, exibindo um resultado com aparência dinâmica que varia conforme a condição do clima e a temperatura do local buscado.</p>
 
 <p align="left">ATUALIZAÇÃO: Seguindo as dicas do mestre <a href="https://www.linkedin.com/in/emanuelcandido/">Emanuel Cândido</a> , incluí um botão ao lado da caixa de busca, além de uma mensagem alternativa para quando a 'query' da busca estiver vazia, orientando o usuário a buscar a cidade através da barra.</p>

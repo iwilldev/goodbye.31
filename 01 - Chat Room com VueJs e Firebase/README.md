@@ -1,5 +1,5 @@
 <h3 align="left">01 - Chat Room com VueJs e Firebase</h3>
-<img src="https://drive.google.com/uc?export=view&id=1i7Ijq_rM3RWqKZjehKh52JTDZM2gorkU" width="360" />
+<img src="https://omagotemum.site/assets/img/portfolio/goodbye31/01/project.png" width="640" />
 <p align="left">A aplicação foi criada importando o unpkg do Vue e abstraindo os scripts em um arquivo JS. Demais recursos foram importados através de links, no próprio HTML. Não há necessidade de instalação de dependências ou de execução de scripts para executá-la. Basta baixar os arquivos e abrir o 'index.html' no seu navegador.</p>
 
 <h4 align="left">Criado com:</h4>

@@ -1,5 +1,5 @@
 <h3 align="left">09 - App de Meditação com JavaScript</h3>
-<img src="https://drive.google.com/uc?export=view&id=1rbykzmNhNZNZ553OrRvAuwx4nLgbc2Cq" width="360" />
+<img src="https://omagotemum.site/assets/img/portfolio/goodbye31/09/project.png" width="640" />
 <p align="left">App para auxiliar a meditação, com dois temas ambientes (e vídeos de fundo correspondentes), três opções de duração e botão play/pause com relógio regressivo.</p>
 
 <h4 align="left">Criado com:</h4>

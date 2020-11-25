@@ -1,5 +1,5 @@
 <h3 align="left">04 - Lista de Compras com VueJs</h3>
-<img src="https://drive.google.com/uc?export=view&id=1jL09UxOBXwkadSs12C7NFttdC4f9Kdpy" width="360" />
+<img src="https://omagotemum.site/assets/img/portfolio/goodbye31/04/project.png" width="640" />
 <p align="left">Loja do Mago, um shopping fake que vende itens e habilidades para desenvolvedores. Construído com VueJs, foi feita para explorar conceitos de reatividade, renderização condicional, binding, entre outros recursos como a criação e utilização de métodos na instância utilizada.</p>
 
 <h4 align="left">Criado com:</h4>

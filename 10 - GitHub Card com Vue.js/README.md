@@ -1,5 +1,5 @@
 <h3 align="left">10 - Github Card com Vue.js.js</h3>
-<img src="https://drive.google.com/uc?export=view&id=1dRwdcaLuiqqCP0NNV_pr4rTnzefwjxu5" width="360" />
+<img src="https://omagotemum.site/assets/img/portfolio/goodbye31/10/project.png" width="640" />
 <p align="left">A página consome a API do GitHub através do 'axios', fazendo uma requisição a duas rotas, retornando um resumo dos dados do perfil buscado e a linguagem mais utilizada nos repositórios</p>
 
 <h4 align="left">Criado com:</h4>

@@ -1,5 +1,5 @@
 <h3 align="left">12 - Quadro de Desenho com JavaScript</h3>
-<img src="https://drive.google.com/uc?export=view&id=10dPax6l7JU-COhzFPzNh_eAFByDpoHuD" width="360" />
+<img src="https://omagotemum.site/assets/img/portfolio/goodbye31/12/project.png" width="640" />
 <p align="left">Quadro de desenho com variação de tamanho e cor do pincel.</p>
 
 <h4 align="left">Criado com:</h4>

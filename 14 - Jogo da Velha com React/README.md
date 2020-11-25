@@ -1,5 +1,5 @@
 <h3 align="left">14 - Jogo da Velha com React</h3>
-<img src="https://drive.google.com/uc?export=view&id=18ajS4aPeZtL8DkUpeKWgK-MXdQ3AvPJ4" width="360" />
+<img src="https://omagotemum.site/assets/img/portfolio/goodbye31/14/project.png" width="640" />
 <p align="left">Reprodução do clássico, com transição entre jogadores (X ou O) e histórico de jogadas com possibilidade de regressão.</p>
 
 <h4 align="left">Criado com:</h4>

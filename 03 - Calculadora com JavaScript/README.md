@@ -1,5 +1,5 @@
 <h3 align="left">03 - Calculadora com JavaScript</h3>
-<img src="https://drive.google.com/uc?export=view&id=1M_fSb7j7H8Q6lPYBYzGzBISRobNcekjQ" width="360" />
+<img src="https://omagotemum.site/assets/img/portfolio/goodbye31/03/project.png" width="640" />
 <p align="left">Calculadora simples, criada com HTML, CSS e JavaScript.
 </p>
 

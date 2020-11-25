@@ -1,5 +1,5 @@
 <h3 align="left">16 - Validação de Formulário com Vue.js</h3>
-<img src="https://drive.google.com/uc?export=view&id=1uRmOyUCHTmXMKeeEDTCaV0NA8cEuPxv1" width="360" />
+<img src="https://omagotemum.site/assets/img/portfolio/goodbye31/16/project.png" width="640" />
 <p align="left">Exemplo de formulário com validação no lado do cliente, utilizando Vue.js, Vuelidate, classes dinâmicas e renderização condicional, para otimizar a experiência e orientar o usuário durante o preenchimento.</p>
 
 <h4 align="left">Criado com:</h4>

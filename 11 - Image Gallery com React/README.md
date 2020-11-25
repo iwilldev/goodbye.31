@@ -1,5 +1,5 @@
 <h3 align="left">11 - Galeria de Imagens com React</h3>
-<img src="https://drive.google.com/uc?export=view&id=1OiqrRDi7V7ZVOXBAFhI7iy2ehGDWKDCY" width="360" />
+<img src="https://omagotemum.site/assets/img/portfolio/goodbye31/11/project.png" width="640" />
 <p align="left">A aplicação utiliza a API do Unsplash, fazendo uma requisição customizada que retorna imagens conforme a busca selecionada. Clicando no card, o usuário é redirecionado a outra rota onde pode visualizar a imagem em resolução maior, podendo ainda clicar nela para abrir sua versão com resolução máxima, em outra aba. Layout feito com CSS Flexbox, responsivo e sem nenhum breakpoint.</p>
 
 <h4 align="left">Criado com:</h4>

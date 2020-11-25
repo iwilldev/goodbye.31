@@ -1,5 +1,5 @@
 <h3 align="left">07 - Painel Drag and Drop com Vue.js</h3>
-<img src="https://drive.google.com/uc?export=view&id=1GqVizuvCB5olm_CxuuCK5L5HLrZkjjle" width="360" />
+<img src="https://omagotemum.site/assets/img/portfolio/goodbye31/07/project.png" width="640" />
 <p align="left">Painel no estilo kan ban, com três estados para as atividades, que podem ser incluídas através do formulário do cabeçalho e movidas de um quadro para o outro.</p>
 
 <h4 align="left">Criado com:</h4>

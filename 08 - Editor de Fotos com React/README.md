@@ -1,5 +1,5 @@
 <h3 align="left">08 - Editor de Fotos com React</h3>
-<img src="https://drive.google.com/uc?export=view&id=1_CVbvb6a3_HDQE6VBaf8zw8E392E1iZR" width="360" />
+<img src="https://omagotemum.site/assets/img/portfolio/goodbye31/08/project.png" width="640" />
 <p align="left">Editor de fotos que permite carregar uma imagem PNG ou JPG e aplicar filtros CSS nela, com a opção de exportação do canvas onde a imagem foi editada.</p>
 
 <p align="left">Nota de má funcionalidade: no mobile, o app não exporta a imagem da maneira adequada. Por algum motivo, o canvas e a sua referência no DOM parecem ter medidas distintas, fazendo com que a imagem seja exportada com faixas pretas a direita e abaixo. Fico aberto a sugestões sobre como resolver esse bug.</p>

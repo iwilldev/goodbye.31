@@ -1,5 +1,5 @@
 <h3 align="left">02 - Flexbox Generator com React</h3>
-<img src="https://drive.google.com/uc?export=view&id=1NWiMdt2uXFzPE_ldnUR4Ukb1X8zX7HMh" width="360" />
+<img src="https://omagotemum.site/assets/img/portfolio/goodbye31/02/project.png" width="640" />
 <p align="left">Aplicação criada para demonstrar o comportamento de um flex-container, através da alteração de suas propriedades.<br><br>
 A tela é dividida em duas partes (horizontalmente, no desktop, e verticalmente, nas telas menores), sendo metade para um "controller", onde você pode alterar as propriedades do container através dos respectivos 'select', e a outra para um preview do container e o código CSS gerado pelo controller.<br><br>
 Criado com 'create-react-app', pode ser executada e enviada para a produção com os scripts padrão.

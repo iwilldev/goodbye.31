@@ -1,5 +1,5 @@
 <h3 align="left">13 - Space Shooter com VueJs</h3>
-<img src="https://drive.google.com/uc?export=view&id=1rfKPZkTGD-nXyaSDwOHcg1b4KOFQqwmT" width="360" />
+<img src="https://omagotemum.site/assets/img/portfolio/goodbye31/13/project.png" width="640" />
 <p align="left">Jogo no estilo arcade compatível com PC (pelo teclado) e smartphones (pelos botões virtuais). O jogo é interrompido se o usuário perder as 10 energias, que são retiradas quando um alien consegue tocar a base do quadro do jogo.</p>
 
 <h4 align="left">Criado com:</h4>

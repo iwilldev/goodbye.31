@@ -1,5 +1,5 @@
 <h3 align="left">18 - Are You Human? com JavaScript</h3>
-<img src="https://drive.google.com/uc?export=view&id=18IXAPtBbeV9NR6JOVQ5GheaE327mXtQo" width="360" />
+<img src="https://omagotemum.site/assets/img/portfolio/goodbye31/18/project.png" width="640" />
 <p align="left">Verificador por toque/clique, no estilo CAPTCHA. Quando o usuário pressiona a área, uma barra enche da esquerda para a direita, até o fim da caixa. O botão de envio só é liberado se o toque for interrompido com a ponta da barra dentro da área vermelha, que aparece em posições aleatórias, a cada tentativa.</p>
 
 <h4 align="left">Criado com:</h4>

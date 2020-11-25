@@ -1,5 +1,5 @@
 <h3 align="left">17 - Orion (Imagens do Espaço) com React</h3>
-<img src="https://drive.google.com/uc?export=view&id=18yIFFNN2K5ojmETQAA9dWQ18X6c9J7KA" width="360" />
+<img src="https://omagotemum.site/assets/img/portfolio/goodbye31/17/project.png" width="640" />
 <p align="left">Utilizando a dependência 'react-calendar', a aplicação faz requisições a API 'Astronomy Picture of The Day' da NASA, retornando a imagem e um link para visualização em alta resolução.</p>
 
 <h4 align="left">Criado com:</h4>

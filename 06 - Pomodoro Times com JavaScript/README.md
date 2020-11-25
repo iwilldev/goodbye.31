@@ -1,5 +1,5 @@
 <h3 align="left">06 - Pomodoro Timer com JavaScript</h3>
-<img src="https://drive.google.com/uc?export=view&id=12ouedWAu-5unQ8kGU6g1H1PdLTvvR3jb" width="360" />
+<img src="https://omagotemum.site/assets/img/portfolio/goodbye31/06/project.png" width="640" />
 <p align="left">A aplicação permite a customização dos tempos de foco e de pausa, individualmente. É possível iniciar e pausar o timer, além de reiniciar a página ao estado original.</p>
 
 <h4 align="left">Criado com:</h4>

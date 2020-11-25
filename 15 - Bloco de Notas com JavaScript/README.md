@@ -1,5 +1,5 @@
 <h3 align="left">15 - Bloco de Notas com JavaScript</h3>
-<img src="https://drive.google.com/uc?export=view&id=1bI22fxZJXmnggOMkQ_aRVLH8I7ozr3yw" width="360" />
+<img src="https://omagotemum.site/assets/img/portfolio/goodbye31/15/project.png" width="640" />
 <p align="left">Bloco de notas com textos salvos em formato Markdown, com armazenamento das notas no Local Storage do navegador.</p>
 
 <h4 align="left">Criado com:</h4>
