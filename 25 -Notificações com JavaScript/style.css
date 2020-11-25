@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  background: hotpink;
+}
+
+#btn {
+  margin: 1rem 0;
+  width: 10rem;
+  height: 3rem;
+  border: 0;
+  border-radius: 10px;
+
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  color: #FFF;
+  background: rgb(129, 33, 81);
+}
+
+#container {
+  margin-top: 3rem;
+  flex: 1;
+}
+
+#container .toast {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 10rem;
+  height: 3rem;
+  border-radius: 10px;
+
+  color: #FFF;
+  background: #FFFFFF22;
+  box-shadow: 2px 2px 5px #33333355;
+
+  font-size: 0.75rem;
+
+  z-index: 99;
+}
+
+#container .toast + .toast {
+  margin-top: 1rem;
+}
