@@ -1,0 +1,101 @@
+#root {
+  width: 100%;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  text-align: center;
+
+  overflow-x: hidden;
+}
+
+.App header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 25px;
+}
+
+.App header a {
+  color: #FFF;
+}
+
+.App form input,
+.App form button {
+  height: 3rem;
+  padding: 0 1rem;
+  border: 0;
+  box-shadow: 2px 2px 2px #00000088;
+
+  font-size: 1rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+.App form input {
+  width: 180px;
+  border-radius: 20px 0 0 20px;
+}
+
+.App form button {
+  width: 140px;
+
+  background: #000;
+  color: #FFF;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+.App form button:hover {
+  background: #050505;
+}
+
+.App .color-container {
+  margin-top: 20px;
+}
+
+.App .color-container > p {
+  margin-bottom: 10px;
+}
+
+.App .color-line {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.App .color-alone {
+  height: 175px;
+  width: 175px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 2px 2px 2px #00000088;
+}
+
+.App .color-alone p {
+  background: #eee;
+  color: #111;
+
+  padding: 0 10px;
+
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.App .color-alone p:first-child {
+  text-transform: uppercase;
+}
+
+.App h3 {
+  margin-top: 30px;
+}
