@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(15, 78, 161);
+
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+button {
+  color: #fff;
+  background: rgb(15, 78, 161);
+  box-shadow: 2px 2px 4px rgb(9, 48, 100, 0.5);
+  border: 0;
+  border-radius: 15px;
+  cursor: pointer;
+
+  padding: 10px 20px;
+  height: 3rem;
+  min-width: 3rem;
+  
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  transition: background 0.3s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  box-shadow: 0;
+  transform: translate(2px, 2px);
+}
+
+.color-container {
+  margin-top: 4rem;
+}
+
+.color-container p {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.color-container .color-line {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.color-container .color-line div {
+  height: 2rem;
+  width: 2rem;
+}
+
+.color-container .color-line #first-color-square {
+  background: rgb(15, 78, 161);
+}
+
+.color-container .color-line #second-color-square {
+  background: #fff;
+  border: 2px solid rgb(15, 78, 161);
+}
