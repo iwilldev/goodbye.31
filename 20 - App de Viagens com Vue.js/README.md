@@ -12,4 +12,4 @@
 <p align="left"><b>yarn install</b>: Instala as dependências necessárias para o projeto</p>
 <p align="left"><b>yarn serve</b>: Executa o projeto em modo de desenvolvimento em localhost:8080</p>
 
-[Veja ao vivo](https://g31-github-resume-card.now.sh/)
+[Veja ao vivo](https://travueling.vercel.app/)
